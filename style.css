@@ -8,13 +8,14 @@
 }
 
 
+
+
 nav{
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #000000;
     height: 70px;
-    width: 100vw;
 }
 
 .nav-item{
@@ -40,20 +41,24 @@ nav > ul{
     list-style-type: none;
 }
 
+.icone{
+    color: white;
+}
+
 /* Index */
 
-.titulo, .sub-titulo{
+.titulo, .sub-titulo, .texto-sobre-nos{
     color: white;
     font-family: 'Inter',sans-serif;
 }
 
 .titulo{
-    font-size: 90px;
+    font-size: 80px;
     letter-spacing: -3%;
 }
 
 .sub-titulo{
-    font-size: 36px;
+    font-size: 30px;
     font-style: normal;
     letter-spacing: 20px;
 }
@@ -81,10 +86,78 @@ nav > ul{
     border: 1px solid #4A91FF;
     border-radius: 20px;
     background-color: transparent;
-    padding: 10px 40px;
+    height: 35px;
+    width: 150px;
+    transition: all ease .5s;
+    margin: 10px;
 }
 
 .btn > a{
+    display: flex;
     text-decoration: none;
     color: white;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.btn:hover{
+    background-color: #4A91FF;   
+}
+
+main,html,body{
+    width: 100%;
+    height: 100%;
+}
+
+/* sobre nos */
+
+body{
+    background-color: black;
+}
+
+.bg-sobrenos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0, 44, 114, 0.30) 70%, rgba(164,18,18,0.20) 100%);
+
+ }
+
+.bg-sobrenos::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    z-index: -1;
+}
+
+main > footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    gap: 1vw;
+    flex: 1;
+}
+
+
+.bg-sobrenos > section{
+    width: 40vw;
+}
+
+.bg-sobrenos > section{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10vw;
+    flex-direction: column;
+    gap: 4vh;
 }

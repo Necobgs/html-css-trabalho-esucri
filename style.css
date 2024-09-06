@@ -7,9 +7,6 @@
     padding: 0;
 }
 
-
-
-
 nav{
     display: flex;
     align-items: center;
@@ -75,7 +72,7 @@ nav > ul{
     align-items: flex-start;
     padding: 10vw;
     flex-direction: column;
-    gap: 3vh;
+    gap: 3vh
 }
 
 .bg-index > section > div{
@@ -105,39 +102,19 @@ nav > ul{
     background-color: #4A91FF;   
 }
 
-main,html,body{
-    width: 100%;
-    height: 100%;
-}
-
 /* sobre nos */
 
 body{
-    background-color: black;
+    height: 100vh;
 }
 
-.bg-sobrenos{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background: rgb(0,0,0);
+.bg-tudo{
+    height: 100vh;
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0, 44, 114, 0.30) 70%, rgba(164,18,18,0.20) 100%);
-
- }
-
-.bg-sobrenos::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     background-color: #000000;
-    z-index: -1;
 }
 
-main > footer{
+footer{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,6 +124,12 @@ main > footer{
     flex: 1;
 }
 
+.bg-sobrenos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 
 .bg-sobrenos > section{
     width: 40vw;

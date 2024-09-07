@@ -3,10 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serviços</title>
+    <title>Portifólio - Vinícius e Emanuel</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <style>
+        body{
+            background: linear-gradient(180deg, rgba(0,0,0,1) 0%, #002c7238 80%, #125da42d 100%);
+            background-color: #000000;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    </style>
 </head>
 <body>
-    
+    <nav>
+        <ul>
+            <li><a href="/index.html" class="nav-item">Página inicial</a></li>
+            <li><a href="/sobreNos.html" class="nav-item">Sobre nós</a></li>
+            <li><a href="/projetos.html" class="nav-item">Projetos</a></li>
+            <li><a href="/servicos.html" class="nav-item selected-item-nav">Serviços</a></li>
+            <li><a href="/artigos.html" class="nav-item">Artigos</a></li>
+            <li><a href="/contato.html" class="nav-item">Contato</a></li>
+        </ul>
+    </nav>
+    <main class="bg-projetos">
+        <section>
+            <h1 class="titulo">Serviços</h1>
+            <div class="cards-list">
+                <div class="card">
+                    <i class="bi bi-shield-check neon-icon-shield"></i>
+                    <div class="card-info">
+                        <h3 class="titulo-projeto">LOREM IPSUM</h3>
+                        <p class="descricao-projeto">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="bi bi-shield-check neon-icon-shield"></i>
+                    <div class="card-info">
+                        <h3 class="titulo-projeto">LOREM IPSUM</h3>
+                        <p class="descricao-projeto">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="bi bi-shield-check neon-icon-shield"></i>
+                    <div class="card-info">
+                        <h3 class="titulo-projeto">LOREM IPSUM</h3>
+                        <p class="descricao-projeto">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make </p>
+                    </div>
+                </div>
+            </div>
+            <button class="btn" style="height: 55px; width: 250px; border-radius:30px"><a href="/contato.html" style="font-size: 20px;">Contato</a></button>
+        </section>
+    </main>
+    <footer>    
+        <i class="fa-brands fa-whatsapp icone fa-lg"></i>
+        <i class="fa-brands fa-instagram icone fa-lg"></i>
+        <i class="fa-brands fa-tiktok icone fa-lg"></i>
+        <i class="fa-brands fa-facebook icone fa-lg"></i>
+        <i class="fa-brands fa-github icone fa-lg"></i>
+    </footer>
+
 </body>
 </html>

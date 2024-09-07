@@ -13,11 +13,7 @@ html,body{
     overflow: hidden;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+
 
 main{
     max-height: 80vh;
@@ -124,7 +120,6 @@ main > section{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding: 10vw;
     flex-direction: column;
 }
 
@@ -143,7 +138,6 @@ main > section{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10vw;
     flex-direction: column;
     gap: 5vh;
     width: 40vw;
@@ -165,7 +159,10 @@ main > section{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
+}
+
+.card-info{
+    margin-top: 20px;
 }
 
 .titulo-projeto{
@@ -178,4 +175,14 @@ main > section{
 .descricao-projeto{
     font-size: 14px;
     font-weight: 100;
+}
+
+/* Serviços */
+
+.neon-icon-shield{
+    color: #4A90FF; 
+    font-size: 5rem;
+    text-shadow: 
+        0 0 5px #4A90FF,
+        0 0 10px #4A90FF;
 }

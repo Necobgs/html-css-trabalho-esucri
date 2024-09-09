@@ -1,12 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
-    <link rel="stylesheet" href="style.css">k
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body{
+            background: linear-gradient(180deg, rgba(0,0,0,1) 0%, #002c723b 80%, #1217a446 100%);
+            background-color: #000000;
+        }
+    </style>
 </head>
 <body>
-    
+    <nav>
+        <ul>
+            <li><a href="/index.html" class="nav-item">Página inicial</a></li>
+            <li><a href="/sobreNos.html" class="nav-item">Sobre nós</a></li>
+            <li><a href="/projetos.html" class="nav-item">Projetos</a></li>
+            <li><a href="/servicos.html" class="nav-item">Serviços</a></li>
+            <li><a href="/artigos.html" class="nav-item">Artigos</a></li>
+            <li><a href="/contato.html" class="nav-item selected-item-nav">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="section-form" style="padding: 0vw 10vw;">
+            <div class="contato">
+                <h1 class="titulo">Contact<br><span style="color: blue">Us</span></h1>
+
+                <form action="/submit" method="POST">
+                    
+                    <label for="nome">Nome</label>
+                    <input class="input-style" type="text" name="nome" placeholder="Seu nome">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" name="telefone" placeholder="(DD) 99999-9999">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Seu email">
+
+                    <label for="horario">Horário de Contato</label>
+                    <input type="time" name="horario">
+
+                    <label for="sexo">Sexo</label>
+                    <select name="sexo">
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                        <option value="Outros">Outros</option>
+                    </select>
+
+                    <label for="mensagem">Assunto</label>
+                    <textarea name="mensagem" rows="4" cols="50" placeholder="Deixe aqui sua mensagem"></textarea>
+
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="checkbox" id="checkbox">
+                        <label for="checkbox">Estou ciente que os dados inseridos serão utilizados somente para
+                            possibilitar o meu atendimento, bem como tratados conforme disposto no
+                            Aviso de Privacidade e Lei Geral de Proteção de Dados.</label>
+                    </div>
+
+                </form>
+
+            </div>
+        </section>
+    </main>
+
 </body>
-</html>
+
+>

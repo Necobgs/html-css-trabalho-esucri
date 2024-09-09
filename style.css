@@ -99,7 +99,7 @@ nav > ul{
     font-family: 'Inter',sans-serif;
 }
 
-main > section > div{
+main > section > #div-titulo-sub{
     padding: 0vh 0vh 6vh;
 }
 
@@ -185,4 +185,37 @@ main > section{
     text-shadow: 
         0 0 5px #4A90FF,
         0 0 10px #4A90FF;
+}
+
+/* Contato */
+
+.contato > h1{
+    font-size: 8vw;
+    padding: 0;
+}
+
+#form-section{
+    display: flex;
+    height: 100vh;
+}
+
+.contato{
+    display: flex;
+    height: 91vh;
+    align-items: center;
+    justify-content: center;
+    gap: 8vw
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+
+    font-family: Inter;
+    color:white;
+}
+
+form > input,select{
+    margin-bottom: 1vh;
 }

@@ -11,6 +11,7 @@ html,body{
     height: 100%;
     width: 100%;
     overflow: hidden;
+    font-family: Inter;
 }
 
 
@@ -189,7 +190,7 @@ main > section{
 
 /* Contato */
 
-.contato > h1{
+.form-container > h1{
     font-size: 8vw;
     padding: 0;
 }
@@ -199,7 +200,7 @@ main > section{
     height: 100vh;
 }
 
-.contato{
+.form-container{
     display: flex;
     height: 91vh;
     align-items: center;
@@ -210,12 +211,67 @@ main > section{
 form{
     display: flex;
     flex-direction: column;
-    gap: 1vh;
-
-    font-family: Inter;
     color:white;
 }
 
-form > input,select{
-    margin-bottom: 1vh;
+form input, select, textarea{
+    border: 1px solid #d4d4d4 20%;
+    border-radius: 7px;
+    background-color: transparent;
+    transition: all ease .5s;
+    color: #ffffff;
+    font-family: Inter;
+    padding: 12px;
+    margin-bottom: 18px;
+}
+
+label{
+    padding-bottom: 1vh;
+}
+
+.form-row{
+    display: flex;
+    justify-content:space-between;
+}
+
+.form-input{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+#sexo{
+    height: 48px;
+}
+
+#sexo > option{
+    color: #003b9b;
+}
+
+.checkbox-container{
+    margin-bottom: 5vh;
+}
+
+.checkbox-container > input{
+    margin-bottom: 0vh;
+}
+
+#form-button{
+    border: 1px solid #595959;
+    border-radius: 30px;
+    background-color: #595959;
+    height: 50px;
+    width: 220px;
+    transition: all ease .5s;
+    color: #FFFFFF;
+}
+
+#form-button:hover{
+    border: 1px solid #4A91FF;
+    border-radius: 30px;
+    background-color: #4A91FF;
+    height: 50px;
+    width: 220px;
+    transition: all ease .5s;
+    color: #FFFFFF;
 }

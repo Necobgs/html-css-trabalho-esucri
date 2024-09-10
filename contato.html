@@ -28,38 +28,52 @@
 
     <main>
         <section id="section-form" style="padding: 0vw 10vw;">
-            <div class="contato">
+            <div class="form-container">
                 <h1 class="titulo">Contact<br><span style="color: blue">Us</span></h1>
 
                 <form action="/submit" method="POST">
                     
-                    <label for="nome">Nome</label>
-                    <input class="input-style" type="text" name="nome" placeholder="Seu nome">
-                    <label for="telefone">Telefone</label>
-                    <input type="tel" name="telefone" placeholder="(DD) 99999-9999">
-
+                    <div class="form-row">
+                        <div class="form-input">
+                            <label for="nome">Nome</label>
+                            <input class="input-style" type="text" name="nome" placeholder="Seu nome">
+                        </div>
+                        <div class="form-input">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" name="telefone" placeholder="(DD) 99999-9999">
+                        </div>
+                    </div>
+                    
                     <label for="email">Email</label>
                     <input type="email" name="email" placeholder="Seu email">
 
-                    <label for="horario">Horário de Contato</label>
-                    <input type="time" name="horario">
+                    <div class="form-row">
+                        <div class="form-input">
+                            <label for="horario">Horário de Contato</label>
+                            <input type="time" name="horario">
+                        </div>
 
-                    <label for="sexo">Sexo</label>
-                    <select name="sexo">
-                        <option value="Masculino">Masculino</option>
-                        <option value="Feminino">Feminino</option>
-                        <option value="Outros">Outros</option>
-                    </select>
+                        <div class="form-input">
+                            <label for="sexo">Sexo</label>
+                            <select name="sexo" id="sexo">
+                                <option value="Masculino">Masculino</option>
+                                <option value="Feminino">Feminino</option>
+                                <option value="Outros">Outros</option>
+                            </select>
+                        </div>
+                    </div>
 
                     <label for="mensagem">Assunto</label>
                     <textarea name="mensagem" rows="4" cols="50" placeholder="Deixe aqui sua mensagem"></textarea>
 
                     <div class="checkbox-container">
                         <input type="checkbox" name="checkbox" id="checkbox">
-                        <label for="checkbox">Estou ciente que os dados inseridos serão utilizados somente para
+                        <label for="checkbox">Estou ciente que os dados inseridos serão utilizados somente para 
                             possibilitar o meu atendimento, bem como tratados conforme disposto no
                             Aviso de Privacidade e Lei Geral de Proteção de Dados.</label>
                     </div>
+
+                    <button type="submit" id="form-button">Enviar</button>
 
                 </form>
 

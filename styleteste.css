@@ -1,155 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+  /* DEMO-SPECIFIC STYLES */
+  .typewriter h1{
+    width: 0%;
+    overflow: hidden;
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    
+  }
 
-/* Estilização geral das páginas */
+  .titulo-linha1{
+    border-right: .5em solid orange; /* The typwriter cursor */
+    animation: 
+      typing 1.5s steps(10, end) forwards,
+      blink-caret .5s step-end 3 forwards;
+    
+  }
 
-*{
-    margin: 0;
-    padding: 0;
-}
-
-html,body{
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden;
-}
-
-.bg-index{
-    height: 100%;
-    background-image: url("img/BG\ image.png");
-    background-size:cover;
-    background-position: center;
-    background-repeat:no-repeat;
-}
-
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #000000;
-    height: 10vh;
-}
-
-.nav-item{
-    text-decoration: none;
-    color: #FFFFFF;
-    transition: all ease .5s;
-}
-
-.nav-item:hover{
-    color: #4A91FF;
-}
-
-.selected-item-nav{
-    color: #4A91FF;
-}
-
-nav > ul{
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    gap: 40px;
-    margin: 5vh;
-    list-style-type: none;
-    font-family: 'Inter',sans-serif;
-}
-
-.icone{
-    color: white;
-}
-
-/* Index */
-
-.titulo, .sub-titulo, .texto-sobre-nos{
-    color: white;
-    font-family: 'Inter',sans-serif;
-}
-
-.titulo{
-    font-size: 80px;
-    letter-spacing: -3%;
-    line-height: 90%;
-    padding: 0vh 0vh 2vh;
-}
-
-.sub-titulo{
-    font-size: 30px;
-    font-style: normal;
-    letter-spacing: 20px;
-}
-
-main > section{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 10vw;
-    flex-direction: column;
-}
-
-.btn{
-    border: 1px solid #4A91FF;
-    border-radius: 20px;
-    background-color: transparent;
-    height: 35px;
-    width: 150px;
-    transition: all ease .5s;
-    row-gap: 30px;
-}
-
-.btn > a{
-    display: flex;
-    text-decoration: none;
-    color: white;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-}
-.btn:hover{
-    background-color: #4A91FF;   
-}
-
-#btn-projetos{
-    margin-right: 2vh;
-}
-
-/* sobre nos */
-
-body{
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0, 44, 114, 0.30) 70%, rgba(164,18,18,0.20) 100%);
-    background-color: #000000;
-}
-
-main{
-    max-height: 80vh;
-}
-
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-    width: 100%;
-    gap: 1vw;
-}
-
-.bg-sobrenos{
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.bg-sobrenos > section{
-    width: 40vw;
-}
-
-.bg-sobrenos > section{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10vw;
-    flex-direction: column;
-    gap: 4vh;
-}
+  .titulo-linha2{
+    border-right: .5em solid transparent; /* The typwriter cursor */
+    animation: 
+      typing 1.5s steps(10, end) 1.5s forwards,
+      blink-caret .5s step-end 1.5s 3 forwards;
+    
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }

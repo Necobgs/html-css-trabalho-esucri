@@ -14,7 +14,9 @@ html,body{
     font-family: Inter;
 }
 
-
+header{
+    padding: 2vh;
+}
 
 main{
     max-height: 80vh;
@@ -24,6 +26,8 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    bottom: 0;
     height: 10vh;
     width: 100%;
     gap: 1vw;
@@ -117,7 +121,7 @@ main > section > #div-titulo-sub{
     letter-spacing: 20px;
 }
 
-main > section{
+main > .index-section{
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -179,6 +183,12 @@ main > section{
 }
 
 /* Serviços */
+
+.section-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
 
 .neon-icon-shield{
     color: #4A90FF; 
@@ -257,12 +267,10 @@ label{
 }
 
 #form-button{
-    border: 1px solid #595959;
     border-radius: 30px;
     background-color: #595959;
     height: 50px;
     width: 220px;
-    transition: all ease .5s;
     color: #FFFFFF;
 }
 
@@ -274,4 +282,82 @@ label{
     width: 220px;
     transition: all ease .5s;
     color: #FFFFFF;
+}
+
+/* ARTIGOS */
+
+#titulo-artigos{
+    color: white;
+}
+
+.main-artigos{
+    height: 100%;
+}
+
+.pg-artigos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.sessao-artigos{  
+    width: 63.33vw;
+    height: 55.5vh;
+    display: flex;
+    align-items: center;
+
+    border-radius: 30px;
+    background-color: white;
+}
+
+.container-artigos{
+    display: flex;
+    padding: 7%;
+    gap: 8%;
+}
+
+.article-artigos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.article-artigos > h2{
+    font-size: 3.5em;
+    padding-bottom: 2%;
+}
+
+table  {
+    font-size: 0.8em;
+    border: transparent;
+    padding-top: 2%;
+}
+
+td{
+    padding: 2% 4%;
+}
+
+#tr-1{
+    background-color: #0047FF;
+}
+
+#tr-2{
+    background-color: #E1E1E1;
+}
+
+.image-artigos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.image-artigos > img {
+    width: 100%;
+    height: 100%;
 }
